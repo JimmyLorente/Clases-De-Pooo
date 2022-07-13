@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.testing.pytestArgs": [
+        "Clase_Poo"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
