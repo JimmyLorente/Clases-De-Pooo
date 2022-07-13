@@ -7,3 +7,5 @@ class Car:
     passager    = str
     brand       = str
     model       = str
+
+print(vars(Car))

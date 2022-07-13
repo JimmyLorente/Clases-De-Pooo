@@ -1,5 +1,5 @@
 from pprint import pprint
-from Clase_Poo.car import Car
+from car import Car
 
 
 if __name__ == "__main__":
