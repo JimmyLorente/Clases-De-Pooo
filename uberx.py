@@ -16,4 +16,4 @@ class uber(Car):
         self.brand      = brand
         self.model      = model
 
-print (Car.brand,Car.id)
+print (Car.brand,Car.id,Car.passager,Car.brand,Car.model)
