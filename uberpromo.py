@@ -1,10 +1,11 @@
-from car import car
+from pyexpat import model
+from Car import Car
 
-class uberpromo(car):
-    id          : str
-    license     : str
-    driver      : str
-    passanger   : str
-    Brand       : str
-    model       : str
-    
+class UberPromo(Car):
+    brand       = str
+    model       = str
+
+    def __init__(self, license, driver, passanger, id, brand, model):
+        super().__init__(license, driver, passanger, id)
+        self.brand      = brand
+        self.model      = model

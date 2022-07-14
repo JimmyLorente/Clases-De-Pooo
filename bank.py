@@ -1,14 +1,12 @@
+from Payment import Payment
 
-from payment import Payment
+class Bank(Payment):
+    bankName        = str
+    identification  = str
+    numberAccount   = int
 
-
-class   bank(Payment):
-    bank                : str
-
-def __init__(self,id,banco,monto,numero_cuenta):
-    self.id                 = id
-    self.monto              = monto
-    self.banco              = banco
-    self.numero_cuenta      = numero_cuenta
-
-print (bank.numero_cuenta,bank.id)
+    def __init__(self, id, ammount, date, typePayment, bankName, identification, numberAccount):
+        super().__init__(id, ammount, date, typePayment)
+        self.bankName           = bankName
+        self.identification     = identification
+        self.numberAccount      = numberAccount

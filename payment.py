@@ -1,10 +1,16 @@
-from gettext import bind_textdomain_codeset
+
+from datetime import date
 
 
-class   Payment:
+class Payment      :
     id              = int
-    monto           = str
-    banco           = str
-    numero_cuenta   = str
+    ammount         = int
+    date            = str
+    typePayment     = []
 
-    
+    def __init__(self, id, ammount, date, typePayment):
+        self.ammount        = ammount
+        self.id             = id
+        self.date           = date
+        self.typePayment    =typePayment
+        

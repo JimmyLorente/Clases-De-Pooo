@@ -1,19 +1,12 @@
-
-
-from io import BufferedRandom
-from lib2to3.pgen2 import driver
 from pyexpat import model
-from turtle import st
-from car import Car
+from statistics import mode
+from Car import Car
 
-class uber(Car):
-    uber       : str
+class UberX(Car):
+    brand       = str
+    model       = str
 
-    def __init__(self,driver,passager,brand,model,id):
-        self.id         = id
-        self.driver     = driver
-        self.passager   = passager
-        self.brand      = brand
-        self.model      = model
-
-print (Car.brand,Car.id,Car.passager,Car.brand,Car.model)
+    def __init__(self, license, driver, passanger, id, brand, model):
+        super().__init__(license, driver, passanger, id)
+        self.brand  = brand
+        self.model  = model
